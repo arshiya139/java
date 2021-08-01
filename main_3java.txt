@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class MyPoint
+{
+int x,y;
+
+MyPoint()
+{
+x=0;
+y=0;
+}
+MyPoint(int x,int y)
+{
+this.x=x;
+this.y=y;
+}
+void ToString()
+{
+System.out.println("("+x+","+y+")");
+}
+void distance(int x,int y)
+{
+this.x=x;
+this.y=y;
+}
+void distance(int x)
+{
+int a=x-y;
+}
+}
+class main_3
+{
+public static void main(String args[])
+{
+MyPoint s1 =new MyPoint(2,6);
+MyPoint s2 =new MyPoint(6,3);
+s1.ToString();
+s1.distance(2,6);
+s1.distance(2);
+s2.ToString();
+s2.distance(2,6);
+s2.distance(2);
+}
+} 
+
